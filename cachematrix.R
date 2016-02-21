@@ -18,7 +18,7 @@ makeCacheMatrix <- function(x = matrix()) {
              getmatrix = getmatrix)
 }
 #this function evaluates whether an inverse matrix has been calculated for the input matrix. If it has, that matrix is retrieved. If it hasn't. That matrix is calculated and cached. It takes as argument the list creatded from the previous function
-cachesolve <- function(x, ...) {
+cacheSolve <- function(x, ...) {
         im <- x$getmatrix()
         if(!is.null(im)) {
                 message("getting cached matrix")
